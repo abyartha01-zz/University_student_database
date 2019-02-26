@@ -1,0 +1,129 @@
+<HTML>
+<HEAD>
+<style>
+#table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+	background-color: #aec1c0;
+}
+
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+#table tr {
+text-align: center;
+}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #aec1c0;
+    color: white;
+}
+.button {
+    background-color: #aec1c0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.Heading{
+        padding-bottom: 0px;
+        padding-top: 20px;
+        font-size: 60px;
+}
+body{
+        background-size: cover;
+}
+</style>
+<TITLE>Insert Student Details
+</TITLE>
+</HEAD>
+<BODY background = http://hdqwalls.com/wallpapers/minimalist-mountains-black-and-white-ap.jpg>
+<center>
+<h1 class = "Heading"> Insert details of the Students: </h1>
+<form action="students.php" method="POST">
+	<table id = "table">
+		<tr>
+        		<td>First Name:</td><td> <input type="text" name = "FName" placeholder = "FName" required></td>
+		</tr>
+		<tr>
+			<td>Last Name:</td><td> <input type="text" name = "LName" placeholder = "LName" required></td>
+		</tr>
+		<tr>
+			<td>Roll Number:</td><td> <input type="text" name = "Roll_No" placeholder = "Roll No." required></td>
+		</tr>
+		<tr>
+			<td>Date of Birth:</td><td> <input type="date" name = "DoB" placeholder = "DoB" required></td>
+		</tr>
+		<tr>
+                        <td>Sex:</td><td> <input type = "radio" name = "Sex" value = "M" checked> Male
+  			<input type = "radio" name = "Sex" value = "F"> Female
+  			<input type = "radio" name = "Sex" value = "O"> Other  </td>
+                </tr>
+		<tr>
+                        <td>Mobile no.: </td><td><input type="text" name = "Contact_No" placeholder = "Mobile No" required></td>
+                </tr>
+		<tr>
+                        <td>Email ID:</td><td> <input type="text" name = "Email_ID" placeholder = "someone@example.com" required></td>
+                </tr>
+		<tr>
+                        <td>Address:</td><td> <input type="text" name = "Address" placeholder = "Address" required></td>
+                </tr>
+		<tr>
+                        <td>CGPA:</td><td> <input = "number" step="0.01" min="0" max="10" name = "CGPA" placeholder = "CGPA" required></td>
+                </tr>
+		<tr>
+                        <td>SGPA (First Semester):</td><td> <input = "number" step="0.01" min="0" max="10" name = "SGPA_1st_Semester" placeholder = "SGPA"></td>
+                </tr>
+		<tr>
+                        <td>SGPA (Second Semester): </td><td><input = "number" step="0.01" min="0" max="10" name = "SGPA_2nd_Semester" placeholder = "SGPA"></td>
+                </tr>
+		<tr>
+                        <td>SGPA (Third Semester):</td><td> <input = "number" step="0.01" min="0" max="10" name = "SGPA_3rd_Semester" placeholder = "SGPA"></td>
+                </tr>
+		<tr>
+                        <td>SGPA (Fourth Semester):</td><td> <input = "number" step="0.01" min="0" max="10" name = "SGPA_4th_Semester" placeholder = "SGPA"></td>
+                </tr>
+		<tr>
+                        <td>SGPA (Fifth Semester): </td><td><input = "number" step="0.01" min="0" max="10" name = "SGPA_5th_Semester" placeholder = "SGPA"></td>
+                </tr>
+		<tr>
+                        <td>SGPA (Sixth Semester):</td><td> <input = "number" step="0.01" min="0" max="10" name = "SGPA_6th_Semester" placeholder = "SGPA"></td>
+                </tr>
+		<tr>
+                        <td>SGPA (Seventh Semester): </td><td><input = "number" step="0.01" min="0" max="10" name = "SGPA_7th_Semester" placeholder = "SGPA"></td>
+                </tr>
+		<tr>
+                        <td>SGPA (Eighth Semester): </td><td><input = "number" step="0.01" min="0" max="10" name = "SGPA_8th_Semester" placeholder = "SGPA"></td>
+                </tr>
+		<tr>
+                        <td>Local Guardian (Contact No.): </td><td><input type="text" name = "Local_Guardian" placeholder = "Local Guardian" required></td>
+                </tr>
+		<tr>
+                        <td>Department (Code): </td><td><input type="text" name = "D_Code" placeholder = "Department" required></td>
+                </tr>
+		<tr>
+                        <td>Mentor (Contact No.):</td><td> <input type="text" name = "Mentor" placeholder = "Mentor" required></td>
+                </tr>
+	        
+</table>
+<input type="submit" class = "button">
+                        <input type="reset" class = "button">
+</form>
+</center>
+</BODY>
+</HTML>

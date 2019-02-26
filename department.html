@@ -1,0 +1,81 @@
+<HTML>
+<HEAD>
+<style>
+#table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+        background-color: #aec1c0;
+}
+
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+#table tr {
+text-align: center;
+}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #aec1c0;
+    color: white;
+}
+.button {
+    background-color: #aec1c0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.Heading{
+        padding-bottom: 50px;
+        padding-top: 30px;
+        font-size: 60px;
+}
+body{
+        background-size: cover;
+}
+</style>
+<TITLE>Insert Course
+</TITLE>
+</HEAD>
+<BODY background = http://hdqwalls.com/wallpapers/minimalist-mountains-black-and-white-ap.jpg>
+<center>
+<h1 class = "Heading">Enter the details of the course</h1>
+<form action="course.php" method="POST">
+        <table id = "table">
+                <tr>
+                        <td>Code:</td><td> <input type = "text" name = "Code" placeholder = "Code" required></td>
+                </tr>
+                <tr>
+                        <td>Title: </td><td><input type = "text" name = "Title" placeholder = "Title" required></td>
+                </tr>
+                <tr>
+            		<td>HoD Name: </td><td> <input type = "text" name = "HoD_Name" placeholder = "HoD Name" requcired></td>
+                </tr>
+		 <tr>
+                        <td>HoD Extension No.: </td><td> <input type = "text" name = "HoD_Contact_No" placeholder = "Extension No." requcired></td>
+                </tr>
+		 <tr>
+                        <td>HoD Email ID: </td><td> <input type = "text" name = "HoD_Name" placeholder = "someone@example.com" requcired></td>
+                </tr>
+        </table>
+                <input type="submit" class = "button">
+                        <input type="reset" class = "button">
+</form>
+</center>
+</BODY>
+</HTML>

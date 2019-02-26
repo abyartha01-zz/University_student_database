@@ -1,0 +1,81 @@
+<html>
+  <head>
+<style>
+#table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+        background-color: #aec1c0;
+}
+
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+#table tr {
+text-align: center;
+}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #aec1c0;
+    color: white;
+}
+.button {
+    background-color: #aec1c0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.Heading{
+        padding-bottom: 50px;
+        padding-top: 20px;
+        font-size: 60px;
+}
+body{
+        background-size: cover;
+}
+</style>
+    <meta charset="UTF-8">
+    <title>Display Registration details</title>
+  </head>
+  <body background = http://hdqwalls.com/wallpapers/minimalist-mountains-black-and-white-ap.jpg>
+        <center>
+        <h1 class = "Heading"> Enter details to be displayed: </h1>
+                <form action="registration_o_cc.php" method="POST">
+                <table id = "table">
+                <tr>
+                        <td>Course Code: </td><td><input type="text" name = "C_Code" placeholder = "Course"></td></tr>
+                </table>
+                                <input type="submit" class = "button">
+                                <input type="reset" class = "button">
+                </form>
+		<form action="registration_o_roll.php" method="POST">
+                <table id = "table">
+                <tr>
+                        <td>Roll No.:</td><td> <input type="text" name = "Roll_No" placeholder = "Roll No."></td>
+                </tr>
+                  </table>
+                                <input type="submit" class = "button">
+                                <input type="reset" class = "button">
+                      
+                </form>
+                <form action="registration_o_all.php" method="POST">
+                	<input type="submit" value = "Display All" class = "button">
+                </form>
+        </center>
+</body>
+</html>  

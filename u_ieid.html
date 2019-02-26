@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Update Email_Id</title>
+<style>
+#table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+        background-color: #aec1c0;
+}
+
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+#table tr {
+text-align: center;
+}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #aec1c0;
+    color: white;
+}
+.button {
+    background-color: #aec1c0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.Heading{
+        padding-bottom: 0px;
+        padding-top: 20px;
+        font-size: 60px;
+}
+body{
+        background-size: cover;
+}
+</style>
+  </head>
+  <body background = http://hdqwalls.com/wallpapers/minimalist-mountains-black-and-white-ap.jpg>
+        <center>
+        <h1 class = "Heading"> Enter details to be updated: </h1>
+                <form action="u_ieid.php" method="POST">
+
+                <table cellpading = 20 id = "table">
+                <tr>
+                        <td>Exension No.:</td><td> <input type="text" name = "Contact_No" placeholder = "Extension" required></td>
+                </tr>
+                <tr>
+                        <td>New Value:</td><td> <input type="text" name = "New" placeholder = "New value" required></td>
+                </tr>
+		</table>
+                
+                        
+                                <input type="submit" class="button">
+                                <input type="reset" class="button">
+                        
+                
+                </form>
+        </center>
+</body>
+</html>
